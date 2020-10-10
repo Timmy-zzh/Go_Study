@@ -1,5 +1,10 @@
 package constant_test
 
+import (
+  "fmt"
+  "testing"
+)
+
 const(
   Monday = iota+1
   Tuesday
@@ -13,10 +18,12 @@ const(
 )
 
 func TestConstTry(t *testing.T){
-  t.Log(Monday,Tuesday)
+  fmt.Print(Monday,Tuesday)
+  fmt.Println()
 }
 
 func TestConstTry1(t *testing.T){
   a:=7 //0111
-  t.Log(a&Readable==Readable,a&Writable==Writable)
+  fmt.Print(a&Readable==Readable,a&Writable==Writable)
+  fmt.Println()
 }

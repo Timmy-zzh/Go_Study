@@ -1,7 +1,11 @@
 package test
 
-import "testing"
+import (
+  "fmt"
+  "testing"
+)
 
-func TestTry(t *tesging.T){
-  t.Log("first try")
+func TestTry(t *testing.T){
+  fmt.Print("first try")
+  fmt.Println()
 }

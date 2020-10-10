@@ -1,6 +1,9 @@
 package type_test
 
-import "testing"
+import (
+  "fmt"
+  "testing"
+)
 
 type MyInt int64
 
@@ -14,22 +17,26 @@ func TestImpl(t *testing.T){
   // c = b
   c = MyInt(b)
 
-  t.Log(a,b,c)
+  fmt.Print(a,b,c)
+  fmt.Println()
 }
 
 func TestPoint(t *testing.T){
   a:=1
   aPtr:=&a
-  aPtr = aPtr+1
-  t.Log(a,aPtr)
-  t.Logf("%T %T",a,aPtr)
+  // aPtr = aPtr+1
+  fmt.Print(a,aPtr)
+  // fmt.Print("%T %T",a,aPtr)
+    fmt.Println()
 }
 
 func TestString(t *testing.T){
   var s string
-  t.Log("*"+s+"*")
-  t.Log(len(s))
+  fmt.Print("*"+s+"*")
+  fmt.Println()
+  fmt.Print(len(s))
   // if s=="" {
   //
   // }
+  fmt.Println()
 }

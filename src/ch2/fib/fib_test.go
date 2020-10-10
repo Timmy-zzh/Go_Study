@@ -1,11 +1,14 @@
 package fib
 
-import "testing"
+import (
+  "fmt"
+  "testing"
+)
 
-fun TestFibList(t *testing.T){
+func TestFibList(t *testing.T){
   //赋值方式一
-  var a int =1
-  var b int =2
+  var a int = 1
+  var b int = 1
 
 // //赋值方式二
 //   var (
@@ -17,11 +20,15 @@ fun TestFibList(t *testing.T){
 //   a:=1
 //   b:=2
 
-  for i := 0; i < 5; i++ {
-    tmp :=a
-    a= b
+  // fmt.Print(a,b)
+
+  for i:= 0; i < 5; i++ {
+    tmp:=a
+    a = b
     b = tmp+a
+     fmt.Print(b ," ")
   }
+  fmt.Println()
 }
 
 //两个变量交换
@@ -34,4 +41,6 @@ func TestExchange(t *testing.T){
   // b = temp
 
   a,b = b,a
+  fmt.Print(a ,b)
+  fmt.Println()
 }
