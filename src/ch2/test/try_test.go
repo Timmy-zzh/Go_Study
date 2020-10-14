@@ -1,11 +1,10 @@
 package test
 
 import (
-  "fmt"
-  "testing"
+	"fmt"
+	"testing"
 )
 
-func TestTry(t *testing.T){
-  fmt.Print("first try")
-  fmt.Println()
+func TestTry(t *testing.T) {
+	fmt.Println("first try")
 }
